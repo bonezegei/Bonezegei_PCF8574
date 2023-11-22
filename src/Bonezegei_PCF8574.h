@@ -13,6 +13,8 @@ public:
   Bonezegei_PCF8574(uint8_t addr);
 
   char begin();
+  uint8_t read();
+  void write(uint8_t data);
 };
 
 #endif
