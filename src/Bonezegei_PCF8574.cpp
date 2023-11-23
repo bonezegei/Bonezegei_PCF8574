@@ -9,10 +9,16 @@ Bonezegei_PCF8574::Bonezegei_PCF8574() {
 }
 
 Bonezegei_PCF8574::Bonezegei_PCF8574(uint8_t addr) {
+  _addr = addr;
 }
 
 char Bonezegei_PCF8574::begin() {
-  
+  if(){
+    return 1;
+  }
+  else{
+    return 0;
+  }
 }
 
 uint8_t Bonezegei_PCF8574::read(){
