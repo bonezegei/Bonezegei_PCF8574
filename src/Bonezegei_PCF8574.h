@@ -1,7 +1,8 @@
 /*
   This Library is written for PCF8574 I2C IO expander
   Author: Bonezegei (Jofel Batutay)
-  Date:  November 2023 
+  Date:  November 2023
+  Updated: Jan 15 2024
 */
 #ifndef _BONEZEGEI_PCF8574_H_
 #define _BONEZEGEI_PCF8574_H_
