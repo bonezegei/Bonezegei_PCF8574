@@ -15,6 +15,9 @@ public:
   char begin();
   uint8_t read();
   void write(uint8_t data);
+
+  uint8_t p_read;  // temporary variable for read and write updates every read and write operation
+  uint8_t p_write;
 };
 
 #endif
