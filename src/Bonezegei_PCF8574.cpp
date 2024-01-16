@@ -22,10 +22,10 @@ char Bonezegei_PCF8574::begin() {
 }
 
 uint8_t Bonezegei_PCF8574::read() {
-  Wire.requestFrom(_addr | 0x01, 1);  
+  Wire.requestFrom(_addr | 0x01, 1);
 
-  while (Wire.available()) {  
-    p_read = Wire.read();         
+  while (Wire.available()) {
+    p_read = Wire.read();
   }
   return p_read;
 }
