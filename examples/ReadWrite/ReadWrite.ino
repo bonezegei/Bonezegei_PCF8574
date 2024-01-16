@@ -1,17 +1,24 @@
-#include "Bonezegei_PCF8574.h"
+/*
+  Read and Write (LED connected on P0 will blink every second)
+  Author: Bonezegei (Jofel Batutay)
+  Date:  January 2024
+
+  P0 connect an LED   (Output)
+  P1 Conect a switch  (Input)
+*/
+
+#include <Bonezegei_PCF8574.h>
 
 Bonezegei_PCF8574 io(0x27);
 
 void setup() {
   Serial.begin(115200);
   io.begin();
-  io.write(0xa0);
-  Serial.printf("data:%x" , io.read());
 }
 
 void loop() {
-  io.write(0xa0);
-  Serial.printf("data:%x \n" , io.read());
+  io.write(0xa0);                           //Write to IO
+  Serial.printf("data:%x \n" , io.read());  //Read IO
   delay(1000);
 
   io.write(0xa1);
