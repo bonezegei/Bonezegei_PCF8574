@@ -14,11 +14,13 @@ Bonezegei_PCF8574::Bonezegei_PCF8574(uint8_t addr) {
 }
 
 char Bonezegei_PCF8574::begin() {
-  if (Wire.begin()) {
-    return 1;
-  } else {
-    return 0;
-  }
+  Wire.begin();
+  return 1;
+ // if (Wire.begin()) {
+ //   return 1;
+ // } else {
+ //   return 0;
+ // }
 }
 
 uint8_t Bonezegei_PCF8574::read() {
